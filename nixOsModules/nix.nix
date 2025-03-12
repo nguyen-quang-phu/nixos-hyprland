@@ -14,6 +14,7 @@
 
   config = lib.mkIf config.nixModule.enable {
     nixpkgs.config.allowUnfree = true;
+    nixpkgs.config.allowUnfreePredicate = _: true;
     nix.settings.experimental-features = ["nix-command" "flakes"];
     system.stateVersion = config.nixModule.stateVersion;
   };

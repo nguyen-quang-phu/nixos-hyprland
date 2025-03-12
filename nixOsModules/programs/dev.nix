@@ -11,7 +11,7 @@
 
   config = lib.mkIf config.program.dev.enable {
     environment.systemPackages = with pkgs; [
-      vscode
+      just
       alejandra
       gh
       silicon

@@ -10,10 +10,10 @@
 
   config = lib.mkIf config.program.cliMinimal.enable {
     environment.systemPackages = with pkgs; [
-      git
-      vim
+      # git
+      # vim
       nh
-      neovim
+      # neovim
       ripgrep
       tmux
       (import ../derivations/moxide.nix {inherit pkgs;})

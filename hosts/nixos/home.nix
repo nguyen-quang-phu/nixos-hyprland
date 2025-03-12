@@ -3,31 +3,34 @@
   hex = colors.hex;
 in {
   imports = [../../homemanagerModules/default.nix];
+  homeManagerModules = {
+    git.enable = true;
+    ssh.enable = true;
+    editor.enable = true;
 
-  homeManagerModules.git.enable = true;
-  homeManagerModules.ssh.enable = true;
-  homeManagerModules.gtk.enable = true;
-  homeManagerModules.homeManager.enable = true;
-  homeManagerModules.tmux.enable = true;
-  homeManagerModules.hyprpaper = {
-    enable = true;
-    path = ../../assets/wallpaper/ryo-vending.png;
-  };
-  homeManagerModules.hyprlock = {
-    enable = true;
-    background = ../../assets/lockscreen.png;
-  };
-  homeManagerModules.hyprland.enable = true;
-  homeManagerModules.hypridle.enable = true;
-  homeManagerModules.moxide = import ./moxide.nix;
-  homeManagerModules.rofi.enable = true;
-  homeManagerModules.zsh.enable = true;
-  homeManagerModules.starship.enable = true;
-  homeManagerModules.terminals.enable = true;
-  homeManagerModules.zathura.enable = true;
+    gtk.enable = true;
+    homeManager.enable = true;
+    tmux.enable = true;
+    hyprpaper = {
+      enable = true;
+      path = ../../assets/wallpaper/ryo-vending.png;
+    };
+    hyprlock = {
+      enable = true;
+      background = ../../assets/lockscreen.png;
+    };
+    hyprland.enable = true;
+    hypridle.enable = true;
+    moxide = import ./moxide.nix;
+    rofi.enable = true;
+    zsh.enable = true;
+    starship.enable = true;
+    terminals.enable = true;
+    zathura.enable = true;
 
-  homeManagerModules.river.enable = false;
-  homeManagerModules.waybar.enable = false;
+    river.enable = false;
+    waybar.enable = false;
+  };
 
   programs.direnv = {
     enable = true;

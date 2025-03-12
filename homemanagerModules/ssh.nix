@@ -4,10 +4,7 @@
   osConfig,
   lib,
   ...
-}: let
-  username = config.homeManagerModules.git.userName;
-  useremail = config.homeManagerModules.git.email;
-in {
+}: {
   options = {
     homeManagerModules = {
       ssh = {

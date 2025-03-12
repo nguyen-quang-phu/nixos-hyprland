@@ -17,5 +17,6 @@
     ./zathura.nix
     ./zsh.nix
     ./ssh.nix
+    ./editor.nix
   ];
 }
