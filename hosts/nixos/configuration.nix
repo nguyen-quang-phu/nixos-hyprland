@@ -32,6 +32,7 @@
   users.defaultUserShell = pkgs.zsh;
 
   locale.enable = true;
+  programs.nix-ld.enable = true;
 
   program = {
     cliMinimal.enable = true;

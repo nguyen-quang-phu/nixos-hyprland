@@ -7,9 +7,10 @@ in {
     git.enable = true;
     ssh.enable = true;
     editor.enable = true;
+    homeManager.enable = true;
+    music.enable = true;
 
     gtk.enable = true;
-    homeManager.enable = true;
     tmux.enable = true;
     hyprpaper = {
       enable = true;

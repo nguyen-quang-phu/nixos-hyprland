@@ -27,8 +27,8 @@ in {
     "${secondMod}, left, changegroupactive, b"
     "${secondMod}, right, changegroupactive, f"
 
-    "${mainMod}, T, exec, ${pkgs.ghostty}/bin/ghostty"
-    "${mainMod}, B, exec, /run/current-system/sw/bin/zen"
+    "${mainMod} SHIFT, T, exec, ${pkgs.ghostty}/bin/ghostty"
+    "${mainMod} SHIFT, B, exec, /run/current-system/sw/bin/zen"
     "${mainMod}, Space, exec, ${pkgs.rofi-wayland}/bin/rofi -show drun"
 
     "${mainMod}, U, exec, ${pkgs.hyprlock}/bin/hyprlock"

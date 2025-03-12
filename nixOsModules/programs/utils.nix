@@ -196,10 +196,10 @@
               control lctl
             )
             (deflayer arrows
-              grv  C-1  C-2    3    4    5    6    7    8    9    0    -    =    bspc
-              tab  q    C-w    e    r    t    y    C-u    C-i    C-o    p    [    ]    \
-              _    a    s    C-d    f    C-g    left down up right     ;    '    ret
-              lsft z    x    C-c    C-v    b    n    m    ,    .    C-/    rsft
+              grv  C-1  C-2    C-3    C-4    C-5    C-6    C-7    C-8    C-9    C-0    -    =    bspc
+              tab  C-q    C-w    C-e    C-r    C-t    C-y    C-u    C-i    C-o    C-p    [    ]    \
+              _    C-a    C-s    C-d    C-f    C-g    left down up right     ;    '    ret
+              lsft C-z    C-x    C-c    C-v    C-b    C-n    C-m    ,    .    C-/    rsft
               lmet lctl lalt           C-spc            ralt rmet rctl
             )
           '';

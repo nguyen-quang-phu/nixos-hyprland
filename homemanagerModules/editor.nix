@@ -115,6 +115,8 @@
       # nodePackages.graphql-language-service-cli
       #sql
       sqlfluff
+      #tools
+      fd
     ];
   };
 }

@@ -22,7 +22,6 @@
       figlet
       neofetch
       nitch
-      stow
       pipes-rs
       sl
       toilet
