@@ -12,6 +12,7 @@
   config = lib.mkIf config.program.dev.enable {
     environment.systemPackages = with pkgs; [
       just
+      python3
       stow
       alejandra
       gh

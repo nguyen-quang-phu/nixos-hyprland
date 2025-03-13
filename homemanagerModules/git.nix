@@ -33,7 +33,7 @@ in {
 
         includes = [
           {
-            condition = "gitdir:~/.config/";
+            condition = "gitdir:/home/keynold/.config/";
             contents = {
               user = {
                 email = useremail;
@@ -42,7 +42,7 @@ in {
             };
           }
           {
-            condition = "gitdir:~/vaults/";
+            condition = "gitdir:/home/keynold/vaults/";
             contents = {
               user = {
                 email = useremail;
@@ -51,7 +51,7 @@ in {
             };
           }
           {
-            condition = "gitdir:~/Code/";
+            condition = "gitdir:/home/keynold/Coding/";
             contents = {
               user = {
                 email = useremail;

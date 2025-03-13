@@ -59,6 +59,10 @@
         enable = true;
         enableZshIntegration = false;
       };
+
+      go = {
+        enable = true;
+      };
     };
     home.sessionVariables = {
       EDITOR = "nvim";
@@ -103,6 +107,8 @@
       protols
       clang-tools
       # js/ts
+      vtsls
+      vscode-langservers-extracted
       angular-language-server
       vue-language-server
       svelte-language-server
@@ -117,6 +123,15 @@
       sqlfluff
       #tools
       fd
+      gnumake
+      # ansible
+      ansible-language-server
+      # python
+      pyright
+      # bash
+      bash-language-server
+      # # cssmodule
+      # cssmodules-language-server
     ];
   };
 }

@@ -69,13 +69,19 @@
     enable = true;
     powerOnBoot = false;
   };
-  services.blueman.enable = true;
+  services = {
+    blueman.enable = true;
 
-  services.power-profiles-daemon.enable = true;
+    power-profiles-daemon.enable = true;
+    ollama = {
+      enable = true;
+      acceleration = "cuda";
+      # Optional: load models on startup
+    };
 
+    fprintd.enable = true;
+  };
   virtualisation.waydroid.enable = false;
-
-  services.fprintd.enable = true;
 
   mime = {
     enable = true;
