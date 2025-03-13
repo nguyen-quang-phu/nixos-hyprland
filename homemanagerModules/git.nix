@@ -33,7 +33,7 @@ in {
 
         includes = [
           {
-            condition = "gitdir:/home/keynold/.config/";
+            condition = "gitdir:/home/keynold/";
             contents = {
               user = {
                 email = useremail;
@@ -41,24 +41,24 @@ in {
               };
             };
           }
-          {
-            condition = "gitdir:/home/keynold/vaults/";
-            contents = {
-              user = {
-                email = useremail;
-                name = username;
-              };
-            };
-          }
-          {
-            condition = "gitdir:/home/keynold/Coding/";
-            contents = {
-              user = {
-                email = useremail;
-                name = username;
-              };
-            };
-          }
+          # {
+          #   condition = "gitdir:/home/keynold/vaults/";
+          #   contents = {
+          #     user = {
+          #       email = useremail;
+          #       name = username;
+          #     };
+          #   };
+          # }
+          # {
+          #   condition = "gitdir:/home/keynold/Coding/";
+          #   contents = {
+          #     user = {
+          #       email = useremail;
+          #       name = username;
+          #     };
+          #   };
+          # }
         ];
 
         extraConfig = {
