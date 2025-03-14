@@ -34,10 +34,10 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs ags spicetify-nix;};
       modules = [
-        ./nixOsModules
-        ./hosts/nixos/configuration.nix
         agenix.nixosModules.default
         inputs.home-manager.nixosModules.default
+        ./nixOsModules
+        ./hosts/nixos/configuration.nix
       ];
     };
     nixosConfigurations.nix-malina = nixpkgs.lib.nixosSystem {
