@@ -23,24 +23,24 @@
 
     programs.ghostty = {
       enable = true;
-      installBatSyntax = false;
-      installVimSyntax = false;
+      enableBashIntegration = true;
+      # clearDefaultKeybinds = true;
+      enableFishIntegration = true;
+      enableZshIntegration = true;
+      installBatSyntax = true;
+      installVimSyntax = true;
       settings = {
+        theme = "catppuccin-mocha";
+        macos-titlebar-proxy-icon = "hidden";
+        title = "";
+        clipboard-trim-trailing-spaces = true;
+        copy-on-select = true;
         window-decoration = false;
-        confirm-close-surface = false;
-
-        ###########
-        ## Fonts ##
-        ###########
-        font-size = 12.5;
-        font-family-bold = "JetBrains Mono ExtraBold";
-        font-family-italic = "JetBrains Mono Italic";
-        font-family-bold-italic = "JetBrains Mono ExtraBold Italic";
-
-        #############
-        ## Theming ##
-        #############
-        theme = "tokyonight_night";
+        fullscreen = true;
+        clipboard-read = "allow";
+        clipboard-write = "allow";
+        shell-integration = "zsh";
+        keybind = "ctrl+v=paste_from_clipboard";
       };
     };
   };

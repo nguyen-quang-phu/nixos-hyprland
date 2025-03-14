@@ -19,5 +19,6 @@
     ./ssh.nix
     ./editor.nix
     ./music.nix
+    ./cli.nix
   ];
 }

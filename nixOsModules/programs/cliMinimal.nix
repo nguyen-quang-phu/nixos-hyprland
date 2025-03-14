@@ -14,11 +14,11 @@
       # vim
       nh
       # neovim
-      ripgrep
-      tmux
+      # ripgrep
+      # tmux
       (import ../derivations/moxide.nix {inherit pkgs;})
       (import ../derivations/mox.nix {inherit pkgs;})
-      jq
+      # jq
     ];
     programs.nano.enable = false;
   };

@@ -122,7 +122,6 @@
       #sql
       sqlfluff
       #tools
-      fd
       gnumake
       # ansible
       ansible-language-server
