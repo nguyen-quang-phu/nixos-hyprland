@@ -21,7 +21,7 @@
         withRuby = true;
         withPython3 = true;
 
-        viAlias = true;
+        viAlias = false;
         vimAlias = true;
         vimdiffAlias = true;
         defaultEditor = true;

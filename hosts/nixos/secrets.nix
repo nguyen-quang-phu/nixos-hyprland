@@ -11,6 +11,18 @@
         file = ../../secrets/password-keynold.age;
         owner = "keynold";
       };
+      CODESTRAL_API_KEY = {
+        file = ../../secrets/CODESTRAL_API_KEY.age;
+        owner = "keynold";
+      };
+      OPENAI_API_KEY = {
+        file = ../../secrets/OPENAI_API_KEY.age;
+        owner = "keynold";
+      };
+      GEMINI_API_KEY = {
+        file = ../../secrets/GEMINI_API_KEY.age;
+        owner = "keynold";
+      };
       #   gitlab-nqp = {
       #     file = ../../secrets/gitlab-nqp.age;
       #     owner = "keynold";

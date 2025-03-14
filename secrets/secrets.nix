@@ -8,4 +8,7 @@ in {
   "github-nqp.age".publicKeys = [keynold];
   "gitlab-nqp.age".publicKeys = [keynold];
   "password-keynold.age".publicKeys = [keynold];
+  "CODESTRAL_API_KEY.age".publicKeys = [keynold];
+  "OPENAI_API_KEY.age".publicKeys = [keynold];
+  "GEMINI_API_KEY.age".publicKeys = [keynold];
 }
