@@ -21,6 +21,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     agenix.url = "github:ryantm/agenix";
+    yt-x.url = "github:Benexl/yt-x";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 

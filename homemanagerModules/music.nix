@@ -25,6 +25,18 @@
           theme = "Catppuccin-mocha";
         };
       };
+      # https://raw.githubusercontent.com/mpv-player/mpv/master/DOCS/man/input.rst
+      mpv = {
+        enable = true;
+        config = {
+          volume = 30;
+        };
+        # https://raw.githubusercontent.com/mpv-player/mpv/master/etc/input.conf
+        bindings = {
+          "UP" = "add volume +2";
+          "DOWN" = "add volume -2";
+        };
+      };
     };
   };
 }

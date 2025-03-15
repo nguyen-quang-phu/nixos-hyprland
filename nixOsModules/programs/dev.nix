@@ -4,7 +4,9 @@
   lib,
   config,
   ...
-}: {
+}: let
+  system = "x86_64-linux";
+in {
   options = {
     program.dev.enable = lib.mkEnableOption "Enable minimal cli programs";
   };
@@ -20,8 +22,9 @@
       silicon
       harper
       xclip
-      inputs.zen-browser.packages."x86_64-linux".default
-      inputs.agenix.packages."x86_64-linux".default
+      inputs.zen-browser.packages."${system}".default
+      inputs.agenix.packages."${system}".default
+      inputs.yt-x.packages."${system}".default
     ];
   };
 }
