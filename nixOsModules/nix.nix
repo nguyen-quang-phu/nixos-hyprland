@@ -13,8 +13,15 @@
   };
 
   config = lib.mkIf config.nixModule.enable {
-    nixpkgs.config.allowUnfree = true;
-    nixpkgs.config.allowUnfreePredicate = _: true;
+    nixpkgs = {
+      config = {
+        allowUnfree = true;
+        allowUnfreePredicate = _: true;
+        permittedInsecurePackages = [
+          "electron-32.3.3"
+        ];
+      };
+    };
     nix.settings.experimental-features = ["nix-command" "flakes"];
     system.stateVersion = config.nixModule.stateVersion;
   };

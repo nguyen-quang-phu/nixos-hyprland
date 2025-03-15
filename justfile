@@ -5,9 +5,11 @@ default:
 
 git-add:
   git add .
-update:
+
+nixos-update:
   nix flake update
-  @just build
+  @just nixos-build
+
 nixos-build:
   @just git-add
   sudo nixos-rebuild switch --show-trace --impure --flake .#nixos
