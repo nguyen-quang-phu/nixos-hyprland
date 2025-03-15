@@ -1,4 +1,5 @@
 {
+  pkgs,
   config,
   lib,
   ...
@@ -12,6 +13,20 @@
       username = "keynold";
       homeDirectory = "/home/keynold";
       stateVersion = "24.05";
+      shellAliases = {
+        "..." = "cd ../..";
+        ":q" = "exit";
+        code = "codium";
+        hy = "Hyprland";
+        pbcopy = "xclip -selection clipboard";
+        pbpaste = "xclip -selection clipboard -o";
+        ze = "zellij";
+        cd = "z";
+        cx = "chmod +x";
+        grep = "grep --color=auto";
+        ls = "${pkgs.coreutils}/bin/ls --color=auto";
+        window-class = "${pkgs.hyprland}/bin/hyprctl clients -j | jq \".[].class\" -r";
+      };
     };
     nixpkgs = {
       config = {

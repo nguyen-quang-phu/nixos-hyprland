@@ -10,16 +10,6 @@
   config = lib.mkIf config.homeManagerModules.zsh.enable {
     programs.zsh = {
       enable = true;
-      shellAliases = {
-        cd = "z";
-        ls = "${pkgs.coreutils}/bin/ls --color=auto";
-        grep = "grep --color=auto";
-        cx = "chmod +x";
-        window-class = "${pkgs.hyprland}/bin/hyprctl clients -j | jq \".[].class\" -r";
-        rename-session = "${pkgs.tmux}/bin/tmux rename-session";
-        rename-window = "${pkgs.tmux}/bin/tmux rename-window";
-        ":q" = "exit";
-      };
       completionInit = "compinit && autoload -Uz compinit";
       initExtra = ''
         ##########
