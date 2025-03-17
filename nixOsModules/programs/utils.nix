@@ -44,7 +44,7 @@
         "uinput"
       ];
     };
-
+    # https://github.com/argenkiwi/kenkyo
     services.kanata = {
       enable = true;
       keyboards = {

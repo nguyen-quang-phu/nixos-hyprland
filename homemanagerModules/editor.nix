@@ -57,7 +57,7 @@
 
       zellij = {
         enable = true;
-        enableZshIntegration = false;
+        enableZshIntegration = true;
       };
 
       go = {

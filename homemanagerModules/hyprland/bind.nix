@@ -30,6 +30,8 @@ in {
     "${mainMod} SHIFT, T, exec, ${pkgs.ghostty}/bin/ghostty"
     "${mainMod} SHIFT, B, exec, /run/current-system/sw/bin/zen"
     "${mainMod}, Space, exec, ${pkgs.rofi-wayland}/bin/rofi -show drun"
+    # "${mainMod}, C, exec, ${pkgs.wl-clipboard}/bin/wl-copy"
+    # "${mainMod}, V, exec, ${pkgs.wl-clipboard}/bin/wl-paste"
 
     "${mainMod}, U, exec, ${pkgs.hyprlock}/bin/hyprlock"
     "${mainMod} SHIFT, U, exec, ${agsPath} toggle power"
