@@ -21,10 +21,10 @@
         pbcopy = "xclip -selection clipboard";
         pbpaste = "xclip -selection clipboard -o";
         ze = "zellij";
-        cd = "z";
+        # cd = "z";
         cx = "chmod +x";
         grep = "grep --color=auto";
-        ls = "${pkgs.coreutils}/bin/ls --color=auto";
+        # ls = "${pkgs.coreutils}/bin/ls --color=auto";
         window-class = "${pkgs.hyprland}/bin/hyprctl clients -j | jq \".[].class\" -r";
       };
     };

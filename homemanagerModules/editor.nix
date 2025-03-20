@@ -57,7 +57,7 @@
 
       zellij = {
         enable = true;
-        enableZshIntegration = true;
+        enableZshIntegration = false;
       };
 
       go = {
@@ -131,6 +131,8 @@
       bash-language-server
       # # cssmodule
       # cssmodules-language-server
+      # rust
+      rustup
     ];
   };
 }

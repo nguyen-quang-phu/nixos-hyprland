@@ -101,6 +101,7 @@ in {
             "${myShell}/bin/${shellName}"
             "${pkgs.hyprpaper}/bin/hyprpaper"
             "${pkgs.wvkbd}/bin/wvkbd-mobintl --hidden -L 300"
+            "fcitx5 -d"
           ];
           general = {
             gaps_in = 0;
