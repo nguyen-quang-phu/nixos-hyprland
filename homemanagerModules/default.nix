@@ -20,5 +20,6 @@
     ./editor.nix
     ./music.nix
     ./cli.nix
+    ./i18n.nix
   ];
 }

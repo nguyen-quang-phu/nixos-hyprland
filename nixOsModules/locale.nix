@@ -61,7 +61,6 @@
             fcitx5-gtk # alternatively, kdePackages.fcitx5-qt
             fcitx5-configtool
             fcitx5-nord # a color theme
-            fcitx5-unikey
             fcitx5-bamboo
           ];
           # settings.inputMethod = {};

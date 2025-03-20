@@ -14,17 +14,6 @@
   };
 
   config = lib.mkIf config.homeManagerModules.music.enable {
-    i18n.inputMethod = {
-      enabled = "fcitx5";
-      fcitx5.addons = with pkgs; [
-        fcitx5-gtk # alternatively, kdePackages.fcitx5-qt
-        fcitx5-configtool
-        fcitx5-nord # a color theme
-        fcitx5-unikey
-        fcitx5-bamboo
-      ];
-    };
-
     home.file."home/keynold/.config/spotify-player/theme.toml".text = builtins.readFile (fetchGit {
         url = "https://github.com/catppuccin/spotify-player.git";
       }

@@ -9,6 +9,7 @@ in {
     editor.enable = true;
     homeManager.enable = true;
     music.enable = true;
+    i18n.enable = true;
     cli.enable = true;
 
     gtk.enable = true;
