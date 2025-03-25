@@ -154,6 +154,10 @@
       # cssmodules-language-server
       # rust
       rustup
+      #java
+      jdt-language-server
+      # js-debug
+      vscode-js-debug
     ];
   };
 }

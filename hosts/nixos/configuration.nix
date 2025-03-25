@@ -23,11 +23,16 @@
     hostName = "nixos";
   };
 
+  virtualisation.docker.enable = true;
   users.users.keynold = {
     isNormalUser = true;
     description = "keynold";
     hashedPasswordFile = config.age.secrets.password-keynold.path;
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
+    ];
   };
   users.defaultUserShell = pkgs.zsh;
 
@@ -67,7 +72,7 @@
 
   hardware.bluetooth = {
     enable = true;
-    powerOnBoot = false;
+    powerOnBoot = true;
   };
   services = {
     blueman.enable = true;

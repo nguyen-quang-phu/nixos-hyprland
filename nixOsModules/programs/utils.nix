@@ -32,6 +32,8 @@
     # Set up udev rules for uinput
     services.udev.extraRules = ''
       KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+      SUBSYSTEM=="input", KERNEL=="event6", ACTION=="add", RUN+="${pkgs.bash}/bin/bash -c 'echo 1 > /sys/devices/platform/i8042/serio0/input/input0/inhibited'"
+      SUBSYSTEM=="input", KERNEL=="event6", ACTION=="remove", RUN+="${pkgs.bash}/bin/bash -c 'echo 0 > /sys/devices/platform/i8042/serio0/input/input0/inhibited'"
     '';
 
     # Ensure the uinput group exists
@@ -58,6 +60,12 @@
             "/dev/input/by-path/pci-0000:00:14.0-usbv2-0:1:1.2-event-kbd"
             "/dev/input/by-path/pci-0000:00:14.0-usbv2-0:2:1.0-event-kbd"
             "/dev/input/by-id/usb-Genius_Wireless_Device-if02-event-kbd"
+            # import evdev
+            # devices = [evdev.InputDevice(path) for path in evdev.list_devices()]
+            # for device in devices:
+            # if "FC660MBT" in device.name:
+            # print(device.path, device.name, device.phys)
+            "/dev/input/event6" #FC660MBT
           ];
           extraDefCfg = ''
             process-unmapped-keys no

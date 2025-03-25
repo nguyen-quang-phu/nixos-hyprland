@@ -27,6 +27,11 @@ in {
       ghostscript
       nix-prefetch-scripts
       nix-prefetch-github
+      devenv
+      tor-browser
+      bluetui
+      television
+      poetry
       inputs.zen-browser.packages."${system}".default
       inputs.agenix.packages."${system}".default
       inputs.yt-x.packages."${system}".default
