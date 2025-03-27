@@ -44,6 +44,12 @@ in {
   };
   config = with config.homeManagerModules;
     lib.mkIf hyprland.enable {
+      xdg = {
+        portal = {
+          enable = true;
+          xdgOpenUsePortal = true;
+        };
+      };
       wayland.windowManager.hyprland = let
         accent = colors.pink;
         inactive = colors.base;

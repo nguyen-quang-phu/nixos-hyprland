@@ -12,6 +12,7 @@ in {
   };
 
   config = lib.mkIf config.program.dev.enable {
+    programs.hyprland.enable = true;
     environment.systemPackages = with pkgs; [
       python311Packages.pylatexenc
       just
@@ -32,6 +33,12 @@ in {
       bluetui
       television
       poetry
+      google-chrome
+      conda
+      pulsemixer
+      clipboard-jh
+      tuir
+      cloudflared
       inputs.zen-browser.packages."${system}".default
       inputs.agenix.packages."${system}".default
       inputs.yt-x.packages."${system}".default

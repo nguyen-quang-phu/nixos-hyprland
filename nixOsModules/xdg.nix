@@ -17,9 +17,17 @@ in {
   };
 
   config = lib.mkIf config.mime.enable {
-    xdg.mime = {
-      enable = true;
-      defaultApplications = lib.mapAttrs (name: value: path value) config.mime.apps;
+    xdg = {
+      # portal = {
+      #   wlr.enable = true;
+      #   enable = true;
+      #   extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+      #   xdgOpenUsePortal = true;
+      # };
+      mime = {
+        enable = true;
+        defaultApplications = lib.mapAttrs (name: value: path value) config.mime.apps;
+      };
     };
   };
 }

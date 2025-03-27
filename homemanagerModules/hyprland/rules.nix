@@ -1,17 +1,17 @@
 {
   windowrule = [
-    "float,^(galculator)$"
-    "float,^(qemu)$"
-
-    ####################################
-    ## AUTOMATIC WORKSPACE ASSIGNMENT ##
-    ####################################
-
-    "workspace 5,^(Element)$"
-    "workspace 5,^(discord)$"
-    "workspace 5,^(Signal)$"
-    "workspace 7,^(Postman)$"
-    "workspace 9,^(Spotify)$"
+    # "float,^(galculator)$"
+    # "float,^(qemu)$"
+    #
+    # ####################################
+    # ## AUTOMATIC WORKSPACE ASSIGNMENT ##
+    # ####################################
+    #
+    # "workspace 5,^(Element)$"
+    # "workspace 5,^(discord)$"
+    # "workspace 5,^(Signal)$"
+    # "workspace 7,^(Postman)$"
+    # "workspace 9,^(Spotify)$"
   ];
   windowrulev2 = [
     ########################

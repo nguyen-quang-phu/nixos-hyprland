@@ -1,4 +1,5 @@
 {
+  inputs,
   pkgs,
   config,
   osConfig,
@@ -17,6 +18,7 @@
     programs = {
       neovim = {
         enable = true;
+        # package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
         withNodeJs = true;
         withRuby = true;
         withPython3 = true;
@@ -115,7 +117,7 @@
       # all
       ctags-lsp
       # go
-      golangci-lint-langserver
+      # golangci-lint-langserver
       delve
       marksman
       markdownlint-cli2
@@ -157,7 +159,7 @@
       #java
       jdt-language-server
       # js-debug
-      vscode-js-debug
+      # vscode-js-debug
     ];
   };
 }
