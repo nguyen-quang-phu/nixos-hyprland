@@ -117,7 +117,7 @@
       # all
       ctags-lsp
       # go
-      # golangci-lint-langserver
+      golangci-lint-langserver
       delve
       marksman
       markdownlint-cli2

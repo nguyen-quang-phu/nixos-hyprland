@@ -36,9 +36,9 @@ in {
       google-chrome
       conda
       pulsemixer
-      clipboard-jh
+      # clipboard-jh
       tuir
-      cloudflared
+      # cloudflared
       inputs.zen-browser.packages."${system}".default
       inputs.agenix.packages."${system}".default
       inputs.yt-x.packages."${system}".default
