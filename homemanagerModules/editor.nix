@@ -113,11 +113,13 @@
       yaml-language-server
       # latex
       texliveFull
+      python311Packages.pylatexenc
       texlab
       # all
       ctags-lsp
       # go
       golangci-lint-langserver
+      golangci-lint
       delve
       marksman
       markdownlint-cli2
@@ -146,6 +148,9 @@
       gnumake
       imagemagick
       mermaid-cli
+      inotify-tools
+      obsidian
+      xclip
       # ansible
       ansible-language-server
       # python
@@ -158,6 +163,8 @@
       rustup
       #java
       jdt-language-server
+      # grammar
+      harper
       # js-debug
       # vscode-js-debug
     ];

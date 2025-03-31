@@ -14,7 +14,6 @@ in {
   config = lib.mkIf config.program.dev.enable {
     programs.hyprland.enable = true;
     environment.systemPackages = with pkgs; [
-      python311Packages.pylatexenc
       just
       python3
       stow
@@ -22,9 +21,6 @@ in {
       gh
       vim
       silicon
-      harper
-      xclip
-      obsidian
       ghostscript
       nix-prefetch-scripts
       nix-prefetch-github
